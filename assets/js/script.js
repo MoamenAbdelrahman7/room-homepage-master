@@ -1,6 +1,6 @@
 const menuBt = document.getElementById("menuBt");
 const navBar = document.querySelector("header nav");
-console.log("menuBt "+ menuBt)
+
 menuBt.addEventListener("click", () => {
     if (navBar.style.display === "" || navBar.style.display === "none"){
         navBar.style.display = "flex";
