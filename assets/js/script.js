@@ -13,6 +13,7 @@ menuBt.addEventListener("click", () => {
         document.body.style.overflow = "auto";
 
     }
+    
 });
 
 // handel slider buttons
@@ -55,6 +56,9 @@ rightBtSlider.addEventListener("click", () => {
     description.textContent = roomsInfo[roomIndex].description;
     coverImg.src = roomsInfo[roomIndex].image_url;
     console.log("roomindex "+ roomIndex);
+    if (window.screen.width <= 429){
+        coverImg.src = coverImg.src.replace("desktop","mobile");
+    }
 }
 });
 leftBtSlider.addEventListener("click", () => {
@@ -65,6 +69,9 @@ leftBtSlider.addEventListener("click", () => {
     coverImg.src = roomsInfo[roomIndex].image_url;
     console.log("roomindex "+ roomIndex);
 
+    if (window.screen.width <= 429){
+        coverImg.src = coverImg.src.replace("desktop","mobile");
+    }
 }
 });
 
